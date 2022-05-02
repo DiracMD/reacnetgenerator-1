@@ -112,6 +112,7 @@ class _HTMLResult(SharedRNGData):
             r"""<rect("[^"]*"|'[^']*'|[^'">])*>""", '', svgdata)
         svgdata = re.sub(
             r"""<\?xml("[^"]*"|'[^']*'|[^'">])*>""", '', svgdata)
+        print("convert")
         return smiles, svgdata
 
     def _readspecies(self, reaction, timeaxis=None):
