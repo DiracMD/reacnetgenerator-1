@@ -1,33 +1,62 @@
 <!DOCTYPE html><html lang=en> <head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>reacnetgenerator.utils &#8212; ReacNetGenerator documentation</title><script data-cfasync=false>
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-  </script><!-- Loaded before other Sphinx assets --><link href="../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel=stylesheet><link href="../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel=stylesheet><link href="../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel=stylesheet><link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel=stylesheet><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2><link rel=stylesheet type=text/css href=../../_static/pygments.css><link rel=stylesheet type=text/css href=../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css><link rel=stylesheet type=text/css href=../../_static/css/custom.css><!-- Pre-loaded scripts that we'll load fully later --><link rel=preload as=script href="../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"><link rel=preload as=script href="../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"><script data-url_root=../../ id=documentation_options src=../../_static/documentation_options.js></script><script src=../../_static/jquery.js></script><script src=../../_static/underscore.js></script><script src=../../_static/_sphinx_javascript_frameworks_compat.js></script><script src=../../_static/doctools.js></script><script src=../../_static/sphinx_highlight.js></script><script>DOCUMENTATION_OPTIONS.pagename = '_modules/reacnetgenerator/utils';</script><script src=https://unpkg.com/bilitube@0/dist/bilitube.min.js></script><link rel=index title=Index href=../../genindex.html><link rel=search title=Search href=../../search.html><meta name=viewport content="width=device-width, initial-scale=1"><meta name=docsearch:language content=en></head> <body data-spy=scroll data-target=#bd-toc-nav data-offset=180 data-default-mode> <a class=skip-link href=#main-content>Skip to main content</a> <input type=checkbox class=sidebar-toggle name=__primary id=__primary> <label class="overlay overlay-primary" for=__primary></label> <input type=checkbox class=sidebar-toggle name=__secondary id=__secondary> <label class="overlay overlay-secondary" for=__secondary></label> <div class=search-button__wrapper> <div class=search-button__overlay></div> <div class=search-button__search-container> <form class="bd-search d-flex align-items-center" action=../../search.html method=get> <i class="fa-solid fa-magnifying-glass"></i> <input type=search class=form-control name=q id=search-input placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete=off autocorrect=off autocapitalize=off spellcheck=false> <span class=search-button__kbd-shortcut><kbd class=kbd-shortcut__modifier>Ctrl</kbd>+<kbd>K</kbd></span> </form> </div> </div> <nav class="bd-header navbar navbar-expand-lg bd-navbar" id=navbar-main><div class="bd-header__inner bd-page-width"> <label class="sidebar-toggle primary-toggle" for=__primary> <span class="fa-solid fa-bars"></span> </label> <div id=navbar-start> <a class="navbar-brand logo" href=../../index.html> <img src=../../_static/reacnetgen.svg class="logo__image only-light" alt=ReacNetGenerator> <img src=../../_static/reacnetgen.svg class="logo__image only-dark" alt=ReacNetGenerator> <p class="title logo__title">ReacNetGenerator</p> </a> </div> <div class="col-lg-9 navbar-header-items"> <div id=navbar-center class=mr-auto> <div class=navbar-center-item> <nav class=navbar-nav> <p class=sidebar-header-items__title role=heading aria-level=1 aria-label="Site Navigation"> Site Navigation </p> <ul id=navbar-main-elements class=navbar-nav> <li class=nav-item> <a class="nav-link nav-internal" href=../../guide/index.html> User Guide </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../tutorial/index.html> Examples </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../develop.html> Development </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../external.html> More </a> </li> <li class=nav-item> <a class="nav-link nav-external" href=/report.html> Report Loader </a> </li> </ul> </nav> </div> </div> <div id=navbar-end> <div class="navbar-end-item navbar-persistent--container"> <button class="btn btn-sm navbar-btn search-button search-button__button" title=Search aria-label=Search data-toggle=tooltip> <i class="fa-solid fa-magnifying-glass"></i> </button> </div> <div class=navbar-end-item> <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title=light/dark aria-label=light/dark data-toggle=tooltip> <span class=theme-switch data-mode=light><i class="fa-solid fa-sun"></i></span> <span class=theme-switch data-mode=dark><i class="fa-solid fa-moon"></i></span> <span class=theme-switch data-mode=auto><i class="fa-solid fa-circle-half-stroke"></i></span> </button> </div> <div class=navbar-end-item> <ul id=navbar-icon-links class=navbar-nav aria-label="Icon Links"> <li class=nav-item> <a href=https://github.com/tongzhugroup/reacnetgenerator title=GitHub class=nav-link rel=noopener target=_blank data-toggle=tooltip><span><i class="fa-brands fa-square-github"></i></span> <label class=sr-only>GitHub</label></a> </li> <li class=nav-item> <a href=https://doi.org/10.1039/C9CP05091D title=Paper class=nav-link rel=noopener target=_blank data-toggle=tooltip><span><i class="fa-solid fa-book-open"></i></span> <label class=sr-only>Paper</label></a> </li> </ul> </div> </div> </div> <div class=navbar-persistent--mobile> <button class="btn btn-sm navbar-btn search-button search-button__button" title=Search aria-label=Search data-toggle=tooltip> <i class="fa-solid fa-magnifying-glass"></i> </button> </div> <label class="sidebar-toggle secondary-toggle" for=__secondary> <span class="fa-solid fa-outdent"></span> </label> </div> </nav> <div class=bd-container> <div class="bd-container__inner bd-page-width"> <div class="bd-sidebar-primary bd-sidebar hide-on-wide"> <div class="sidebar-header-items sidebar-primary__section"> <div class=sidebar-header-items__center> <div class=navbar-center-item> <nav class=navbar-nav> <p class=sidebar-header-items__title role=heading aria-level=1 aria-label="Site Navigation"> Site Navigation </p> <ul id=navbar-main-elements class=navbar-nav> <li class=nav-item> <a class="nav-link nav-internal" href=../../guide/index.html> User Guide </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../tutorial/index.html> Examples </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../develop.html> Development </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../external.html> More </a> </li> <li class=nav-item> <a class="nav-link nav-external" href=/report.html> Report Loader </a> </li> </ul> </nav> </div> </div> <div class=sidebar-header-items__end> <div class=navbar-end-item> <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title=light/dark aria-label=light/dark data-toggle=tooltip> <span class=theme-switch data-mode=light><i class="fa-solid fa-sun"></i></span> <span class=theme-switch data-mode=dark><i class="fa-solid fa-moon"></i></span> <span class=theme-switch data-mode=auto><i class="fa-solid fa-circle-half-stroke"></i></span> </button> </div> <div class=navbar-end-item> <ul id=navbar-icon-links class=navbar-nav aria-label="Icon Links"> <li class=nav-item> <a href=https://github.com/tongzhugroup/reacnetgenerator title=GitHub class=nav-link rel=noopener target=_blank data-toggle=tooltip><span><i class="fa-brands fa-square-github"></i></span> <label class=sr-only>GitHub</label></a> </li> <li class=nav-item> <a href=https://doi.org/10.1039/C9CP05091D title=Paper class=nav-link rel=noopener target=_blank data-toggle=tooltip><span><i class="fa-solid fa-book-open"></i></span> <label class=sr-only>Paper</label></a> </li> </ul> </div> </div> </div> <div class="sidebar-end-items sidebar-primary__section"> <div class=sidebar-end-items__item> </div> </div> <div id=rtd-footer-container></div> </div> <main id=main-content class=bd-main> <div class=bd-content> <div class=bd-article-container> <div class=bd-header-article> </div> <article class=bd-article role=main> <h1>Source code for reacnetgenerator.utils</h1><div class=highlight><pre>
-<span></span><span class=c1># cython: language_level=3</span>
+  </script><!-- Loaded before other Sphinx assets --><link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel=stylesheet><link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel=stylesheet><link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel=stylesheet><link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel=stylesheet><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2><link rel=preload as=font type=font/woff2 crossorigin href=../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2><link rel=stylesheet type=text/css href=../../_static/pygments.css><link rel=stylesheet type=text/css href=../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css><link rel=stylesheet type=text/css href=../../_static/css/custom.css><!-- Pre-loaded scripts that we'll load fully later --><link rel=preload as=script href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"><link rel=preload as=script href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"><script data-url_root=../../ id=documentation_options src=../../_static/documentation_options.js></script><script src=../../_static/jquery.js></script><script src=../../_static/underscore.js></script><script src=../../_static/_sphinx_javascript_frameworks_compat.js></script><script src=../../_static/doctools.js></script><script src=../../_static/sphinx_highlight.js></script><script>DOCUMENTATION_OPTIONS.pagename = '_modules/reacnetgenerator/utils';</script><script src=https://unpkg.com/bilitube@0/dist/bilitube.min.js></script><link rel=index title=Index href=../../genindex.html><link rel=search title=Search href=../../search.html><meta name=viewport content="width=device-width, initial-scale=1"><meta name=docsearch:language content=en></head> <body data-bs-spy=scroll data-bs-target=.bd-toc-nav data-offset=180 data-bs-root-margin="0px 0px -60%" data-default-mode> <a class=skip-link href=#main-content>Skip to main content</a> <input type=checkbox class=sidebar-toggle name=__primary id=__primary> <label class="overlay overlay-primary" for=__primary></label> <input type=checkbox class=sidebar-toggle name=__secondary id=__secondary> <label class="overlay overlay-secondary" for=__secondary></label> <div class=search-button__wrapper> <div class=search-button__overlay></div> <div class=search-button__search-container> <form class="bd-search d-flex align-items-center" action=../../search.html method=get> <i class="fa-solid fa-magnifying-glass"></i> <input type=search class=form-control name=q id=search-input placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete=off autocorrect=off autocapitalize=off spellcheck=false> <span class=search-button__kbd-shortcut><kbd class=kbd-shortcut__modifier>Ctrl</kbd>+<kbd>K</kbd></span> </form></div> </div> <nav class="bd-header navbar navbar-expand-lg bd-navbar"> <div class="bd-header__inner bd-page-width"> <label class="sidebar-toggle primary-toggle" for=__primary> <span class="fa-solid fa-bars"></span> </label> <div class=navbar-header-items__start> <div class=navbar-item> <a class="navbar-brand logo" href=../../index.html> <img src=../../_static/reacnetgen.svg class="logo__image only-light" alt=ReacNetGenerator> <script>document.write(`<img src="../../_static/reacnetgen.svg" class="logo__image only-dark" alt="ReacNetGenerator"/>`);</script> <p class="title logo__title">ReacNetGenerator</p> </a></div> </div> <div class="col-lg-9 navbar-header-items"> <div class="me-auto navbar-header-items__center"> <div class=navbar-item><nav class=navbar-nav> <p class=sidebar-header-items__title role=heading aria-level=1 aria-label="Site Navigation"> Site Navigation </p> <ul class="bd-navbar-elements navbar-nav"> <li class=nav-item> <a class="nav-link nav-internal" href=../../guide/index.html> User Guide </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../tutorial/index.html> Examples </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../develop.html> Development </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../external.html> More </a> </li> <li class=nav-item> <a class="nav-link nav-external" href=/report.html> Report Loader </a> </li> </ul> </nav></div> </div> <div class=navbar-header-items__end> <div class="navbar-item navbar-persistent--container"> <script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script> </div> <div class=navbar-item> <script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div> <div class=navbar-item><ul class="navbar-icon-links navbar-nav" aria-label="Icon Links"> <li class=nav-item> <a href=https://github.com/tongzhugroup/reacnetgenerator title=GitHub class=nav-link rel=noopener target=_blank data-bs-toggle=tooltip data-bs-placement=bottom><span><i class="fa-brands fa-square-github"></i></span> <label class=sr-only>GitHub</label></a> </li> <li class=nav-item> <a href=https://doi.org/10.1039/C9CP05091D title=Paper class=nav-link rel=noopener target=_blank data-bs-toggle=tooltip data-bs-placement=bottom><span><i class="fa-solid fa-book-open"></i></span> <label class=sr-only>Paper</label></a> </li> </ul></div> </div> </div> <div class=navbar-persistent--mobile> <script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script> </div> </div> </nav> <div class=bd-container> <div class="bd-container__inner bd-page-width"> <div class="bd-sidebar-primary bd-sidebar hide-on-wide"> <div class="sidebar-header-items sidebar-primary__section"> <div class=sidebar-header-items__center> <div class=navbar-item><nav class=navbar-nav> <p class=sidebar-header-items__title role=heading aria-level=1 aria-label="Site Navigation"> Site Navigation </p> <ul class="bd-navbar-elements navbar-nav"> <li class=nav-item> <a class="nav-link nav-internal" href=../../guide/index.html> User Guide </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../tutorial/index.html> Examples </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../develop.html> Development </a> </li> <li class=nav-item> <a class="nav-link nav-internal" href=../../external.html> More </a> </li> <li class=nav-item> <a class="nav-link nav-external" href=/report.html> Report Loader </a> </li> </ul> </nav></div> </div> <div class=sidebar-header-items__end> <div class=navbar-item> <script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div> <div class=navbar-item><ul class="navbar-icon-links navbar-nav" aria-label="Icon Links"> <li class=nav-item> <a href=https://github.com/tongzhugroup/reacnetgenerator title=GitHub class=nav-link rel=noopener target=_blank data-bs-toggle=tooltip data-bs-placement=bottom><span><i class="fa-brands fa-square-github"></i></span> <label class=sr-only>GitHub</label></a> </li> <li class=nav-item> <a href=https://doi.org/10.1039/C9CP05091D title=Paper class=nav-link rel=noopener target=_blank data-bs-toggle=tooltip data-bs-placement=bottom><span><i class="fa-solid fa-book-open"></i></span> <label class=sr-only>Paper</label></a> </li> </ul></div> </div> </div> <div class="sidebar-primary-items__end sidebar-primary__section"> </div> <div id=rtd-footer-container></div> </div> <main id=main-content class=bd-main> <div class=bd-content> <div class=bd-article-container> <div class=bd-header-article> <div class="header-article-items header-article__inner"> <div class=header-article-items__start> <div class=header-article-item> <nav aria-label=Breadcrumbs> <ul class=bd-breadcrumbs role=navigation aria-label=Breadcrumb> <li class="breadcrumb-item breadcrumb-home"> <a href=../../index.html class=nav-link aria-label=Home> <i class="fa-solid fa-home"></i> </a> </li> <li class=breadcrumb-item><a href=../index.html class=nav-link>Module code</a></li> <li class="breadcrumb-item active" aria-current=page>reacnetgenerator.utils</li> </ul> </nav> </div> </div> </div> </div> <div id=searchbox></div> <article class=bd-article role=main> <h1>Source code for reacnetgenerator.utils</h1><div class=highlight><pre>
+<span></span><span class=c1># SPDX-License-Identifier: LGPL-3.0-or-later</span>
+<span class=c1># cython: language_level=3</span>
 <span class=c1># cython: linetrace=True</span>
 <span class=sd>&quot;&quot;&quot;Provide utils for ReacNetGenerator.&quot;&quot;&quot;</span>
 
 
-<span class=kn>from</span> <span class=nn>contextlib</span> <span class=kn>import</span> <span class=n>ExitStack</span>
-<span class=kn>import</span> <span class=nn>os</span>
-<span class=kn>import</span> <span class=nn>shutil</span>
-<span class=kn>import</span> <span class=nn>itertools</span>
-<span class=kn>import</span> <span class=nn>pickle</span>
-<span class=kn>import</span> <span class=nn>hashlib</span>
 <span class=kn>import</span> <span class=nn>asyncio</span>
+<span class=kn>import</span> <span class=nn>hashlib</span>
+<span class=kn>import</span> <span class=nn>itertools</span>
+<span class=kn>import</span> <span class=nn>os</span>
+<span class=kn>import</span> <span class=nn>pickle</span>
+<span class=kn>import</span> <span class=nn>shutil</span>
+<span class=kn>from</span> <span class=nn>contextlib</span> <span class=kn>import</span> <span class=n>ExitStack</span>
 <span class=kn>from</span> <span class=nn>multiprocessing</span> <span class=kn>import</span> <span class=n>Pool</span><span class=p>,</span> <span class=n>Semaphore</span>
 <span class=kn>from</span> <span class=nn>typing</span> <span class=kn>import</span> <span class=p>(</span>
+    <span class=n>IO</span><span class=p>,</span>
+    <span class=n>TYPE_CHECKING</span><span class=p>,</span>
     <span class=n>Any</span><span class=p>,</span>
+    <span class=n>AnyStr</span><span class=p>,</span>
     <span class=n>BinaryIO</span><span class=p>,</span>
     <span class=n>Callable</span><span class=p>,</span>
+    <span class=n>Generator</span><span class=p>,</span>
     <span class=n>Iterable</span><span class=p>,</span>
     <span class=n>List</span><span class=p>,</span>
     <span class=n>Optional</span><span class=p>,</span>
     <span class=n>Tuple</span><span class=p>,</span>
-    <span class=n>IO</span><span class=p>,</span>
-    <span class=n>AnyStr</span><span class=p>,</span>
-    <span class=n>Generator</span><span class=p>,</span>
     <span class=n>Union</span><span class=p>,</span>
-    <span class=n>TYPE_CHECKING</span><span class=p>,</span>
 <span class=p>)</span>
 
 <span class=kn>import</span> <span class=nn>lz4.frame</span>
@@ -41,6 +70,7 @@
 <span class=k>if</span> <span class=n>TYPE_CHECKING</span><span class=p>:</span>
     <span class=kn>import</span> <span class=nn>multiprocessing.pool</span>
     <span class=kn>import</span> <span class=nn>multiprocessing.synchronize</span>
+
     <span class=kn>import</span> <span class=nn>reacnetgenerator</span>
 
 
@@ -48,7 +78,7 @@
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Store a buffer for writing files.</span>
 
 <span class=sd>    It is expensive to write to a file, so we need to make a buffer.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
 <span class=sd>    f: fileObject</span>
@@ -59,14 +89,17 @@
 <span class=sd>    sep: str or bytes, default: None</span>
 <span class=sd>        The separator for contents. If None (default), there will be no separator.</span>
 <span class=sd>    &quot;&quot;&quot;</span>
-    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>f</span><span class=p>:</span> <span class=n>IO</span><span class=p>,</span> <span class=n>linenumber</span><span class=p>:</span> <span class=nb>int</span> <span class=o>=</span> <span class=mi>1200</span><span class=p>,</span> <span class=n>sep</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>AnyStr</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
+
+    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span>
+        <span class=bp>self</span><span class=p>,</span> <span class=n>f</span><span class=p>:</span> <span class=n>IO</span><span class=p>,</span> <span class=n>linenumber</span><span class=p>:</span> <span class=nb>int</span> <span class=o>=</span> <span class=mi>1200</span><span class=p>,</span> <span class=n>sep</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>AnyStr</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span>
+    <span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>f</span> <span class=o>=</span> <span class=n>f</span>
         <span class=k>if</span> <span class=n>sep</span> <span class=ow>is</span> <span class=ow>not</span> <span class=kc>None</span><span class=p>:</span>
             <span class=bp>self</span><span class=o>.</span><span class=n>sep</span> <span class=o>=</span> <span class=n>sep</span>
-        <span class=k>elif</span> <span class=n>f</span><span class=o>.</span><span class=n>mode</span> <span class=o>==</span> <span class=s1>&#39;w&#39;</span><span class=p>:</span>
-            <span class=bp>self</span><span class=o>.</span><span class=n>sep</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span>
-        <span class=k>elif</span> <span class=n>f</span><span class=o>.</span><span class=n>mode</span> <span class=o>==</span> <span class=s1>&#39;wb&#39;</span><span class=p>:</span>
-            <span class=bp>self</span><span class=o>.</span><span class=n>sep</span> <span class=o>=</span> <span class=sa>b</span><span class=s1>&#39;&#39;</span>
+        <span class=k>elif</span> <span class=n>f</span><span class=o>.</span><span class=n>mode</span> <span class=o>==</span> <span class=s2>&quot;w&quot;</span><span class=p>:</span>
+            <span class=bp>self</span><span class=o>.</span><span class=n>sep</span> <span class=o>=</span> <span class=s2>&quot;&quot;</span>
+        <span class=k>elif</span> <span class=n>f</span><span class=o>.</span><span class=n>mode</span> <span class=o>==</span> <span class=s2>&quot;wb&quot;</span><span class=p>:</span>
+            <span class=bp>self</span><span class=o>.</span><span class=n>sep</span> <span class=o>=</span> <span class=sa>b</span><span class=s2>&quot;&quot;</span>
         <span class=k>else</span><span class=p>:</span>
             <span class=k>raise</span> <span class=ne>RuntimeError</span><span class=p>(</span><span class=s2>&quot;File mode should be w or wb!&quot;</span><span class=p>)</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>linenumber</span> <span class=o>=</span> <span class=n>linenumber</span>
@@ -75,10 +108,10 @@
 
 <div class=viewcode-block id=WriteBuffer.append><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.WriteBuffer.append>[docs]</a>    <span class=k>def</span> <span class=nf>append</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>text</span><span class=p>:</span> <span class=n>AnyStr</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
 <span class=w>        </span><span class=sd>&quot;&quot;&quot;Append a text.</span>
-<span class=sd>        </span>
+
 <span class=sd>        Parameters</span>
 <span class=sd>        ----------</span>
-<span class=sd>        text: str or bytes</span>
+<span class=sd>        text : str or bytes</span>
 <span class=sd>            The text to be appended.</span>
 <span class=sd>        &quot;&quot;&quot;</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>buff</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>text</span><span class=p>)</span>
@@ -89,7 +122,7 @@
 
 <span class=sd>        Parameters</span>
 <span class=sd>        ----------</span>
-<span class=sd>        text: list of strs or bytes</span>
+<span class=sd>        text : list of strs or bytes</span>
 <span class=sd>            Texts to be extended.</span>
 <span class=sd>        &quot;&quot;&quot;</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>buff</span><span class=o>.</span><span class=n>extend</span><span class=p>(</span><span class=n>text</span><span class=p>)</span>
@@ -97,7 +130,7 @@
 
 <div class=viewcode-block id=WriteBuffer.check><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.WriteBuffer.check>[docs]</a>    <span class=k>def</span> <span class=nf>check</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
 <span class=w>        </span><span class=sd>&quot;&quot;&quot;Check if the number of stored contents exceeds.</span>
-<span class=sd>        </span>
+
 <span class=sd>        If so, the buffer will be flushed.</span>
 <span class=sd>        &quot;&quot;&quot;</span>
         <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>buff</span><span class=p>)</span> <span class=o>&gt;</span> <span class=bp>self</span><span class=o>.</span><span class=n>linenumber</span><span class=p>:</span>
@@ -110,21 +143,23 @@
             <span class=bp>self</span><span class=o>.</span><span class=n>buff</span><span class=p>[:]</span> <span class=o>=</span> <span class=p>[]</span></div>
 
     <span class=k>def</span> <span class=fm>__enter__</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=s2>&quot;WriteBuffer&quot;</span><span class=p>:</span>
+<span class=w>        </span><span class=sd>&quot;&quot;&quot;Enter the context.&quot;&quot;&quot;</span>
         <span class=k>return</span> <span class=bp>self</span>
 
     <span class=k>def</span> <span class=fm>__exit__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>exc_type</span><span class=p>,</span> <span class=n>exc_value</span><span class=p>,</span> <span class=n>traceback</span><span class=p>):</span>
+<span class=w>        </span><span class=sd>&quot;&quot;&quot;Exit the context.&quot;&quot;&quot;</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>flush</span><span class=p>()</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>f</span><span class=o>.</span><span class=fm>__exit__</span><span class=p>(</span><span class=n>exc_type</span><span class=p>,</span> <span class=n>exc_value</span><span class=p>,</span> <span class=n>traceback</span><span class=p>)</span></div>
 
 
 <div class=viewcode-block id=appendIfNotNone><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.appendIfNotNone>[docs]</a><span class=k>def</span> <span class=nf>appendIfNotNone</span><span class=p>(</span><span class=n>f</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=n>WriteBuffer</span><span class=p>,</span> <span class=n>ExitStack</span><span class=p>],</span> <span class=n>wbytes</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>AnyStr</span><span class=p>])</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Append a line to a file if the line is not None.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    f: WriteBuffer</span>
+<span class=sd>    f : WriteBuffer</span>
 <span class=sd>        The file to write.</span>
-<span class=sd>    wbytes: str or bytes</span>
+<span class=sd>    wbytes : str or bytes</span>
 <span class=sd>        The line to write.</span>
 <span class=sd>    &quot;&quot;&quot;</span>
     <span class=k>if</span> <span class=n>wbytes</span> <span class=ow>is</span> <span class=ow>not</span> <span class=kc>None</span><span class=p>:</span>
@@ -132,20 +167,22 @@
         <span class=n>f</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>wbytes</span><span class=p>)</span></div>
 
 
-<div class=viewcode-block id=produce><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.produce>[docs]</a><span class=k>def</span> <span class=nf>produce</span><span class=p>(</span><span class=n>semaphore</span><span class=p>:</span> <span class=s2>&quot;multiprocessing.synchronize.Semaphore&quot;</span><span class=p>,</span>
-            <span class=n>plist</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=n>Any</span><span class=p>],</span>
-            <span class=n>parameter</span><span class=p>:</span> <span class=n>Any</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Generator</span><span class=p>[</span><span class=n>Tuple</span><span class=p>[</span><span class=n>Any</span><span class=p>,</span> <span class=n>Any</span><span class=p>],</span> <span class=kc>None</span><span class=p>,</span> <span class=kc>None</span><span class=p>]:</span>
+<div class=viewcode-block id=produce><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.produce>[docs]</a><span class=k>def</span> <span class=nf>produce</span><span class=p>(</span>
+    <span class=n>semaphore</span><span class=p>:</span> <span class=s2>&quot;multiprocessing.synchronize.Semaphore&quot;</span><span class=p>,</span>
+    <span class=n>plist</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=n>Any</span><span class=p>],</span>
+    <span class=n>parameter</span><span class=p>:</span> <span class=n>Any</span><span class=p>,</span>
+<span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Generator</span><span class=p>[</span><span class=n>Tuple</span><span class=p>[</span><span class=n>Any</span><span class=p>,</span> <span class=n>Any</span><span class=p>],</span> <span class=kc>None</span><span class=p>,</span> <span class=kc>None</span><span class=p>]:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Item producer with a semaphore.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Prevent large memory usage due to slow IO.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    semaphore: multiprocessing.Semaphore</span>
+<span class=sd>    semaphore : multiprocessing.Semaphore</span>
 <span class=sd>        The semaphore to acquire.</span>
-<span class=sd>    plist: list of objects</span>
+<span class=sd>    plist : list of objects</span>
 <span class=sd>        The list of items to be passed.</span>
-<span class=sd>    parameter: object</span>
+<span class=sd>    parameter : object</span>
 <span class=sd>        The parameter yielded with each item.</span>
 
 <span class=sd>    Yields</span>
@@ -174,7 +211,7 @@
 
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    x: str or bytes</span>
+<span class=sd>    x : str or bytes</span>
 <span class=sd>        The line to compress.</span>
 
 <span class=sd>    Returns</span>
@@ -185,20 +222,20 @@
     <span class=k>if</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=nb>str</span><span class=p>):</span>
         <span class=n>x</span> <span class=o>=</span> <span class=n>x</span><span class=o>.</span><span class=n>encode</span><span class=p>()</span>
     <span class=n>compress_block</span> <span class=o>=</span> <span class=n>lz4</span><span class=o>.</span><span class=n>frame</span><span class=o>.</span><span class=n>compress</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>compression_level</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span>
-    <span class=n>length_bytes</span> <span class=o>=</span> <span class=nb>len</span><span class=p>(</span><span class=n>compress_block</span><span class=p>)</span><span class=o>.</span><span class=n>to_bytes</span><span class=p>(</span><span class=mi>64</span><span class=p>,</span> <span class=n>byteorder</span><span class=o>=</span><span class=s1>&#39;little&#39;</span><span class=p>)</span>
+    <span class=n>length_bytes</span> <span class=o>=</span> <span class=nb>len</span><span class=p>(</span><span class=n>compress_block</span><span class=p>)</span><span class=o>.</span><span class=n>to_bytes</span><span class=p>(</span><span class=mi>64</span><span class=p>,</span> <span class=n>byteorder</span><span class=o>=</span><span class=s2>&quot;little&quot;</span><span class=p>)</span>
     <span class=k>return</span> <span class=n>length_bytes</span> <span class=o>+</span> <span class=n>compress_block</span></div>
 
 
 <div class=viewcode-block id=decompress><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.decompress>[docs]</a><span class=k>def</span> <span class=nf>decompress</span><span class=p>(</span><span class=n>x</span><span class=p>:</span> <span class=nb>bytes</span><span class=p>,</span> <span class=n>isbytes</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>False</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=nb>bytes</span><span class=p>]:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Decompress the line.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    x: bytes</span>
+<span class=sd>    x : bytes</span>
 <span class=sd>        The line to decompress.</span>
-<span class=sd>    isbytes: bool, optional, default: False</span>
+<span class=sd>    isbytes : bool, optional, default: False</span>
 <span class=sd>        If the decompressed content is bytes. If not, the line will be decoded.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    str or bytes</span>
@@ -212,12 +249,12 @@
 
 <div class=viewcode-block id=listtobytes><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.listtobytes>[docs]</a><span class=k>def</span> <span class=nf>listtobytes</span><span class=p>(</span><span class=n>x</span><span class=p>:</span> <span class=n>Any</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>bytes</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Convert an object to a compressed line.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    x: object</span>
+<span class=sd>    x : object</span>
 <span class=sd>        The object to convert, such as numpy.ndarray.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    bytes</span>
@@ -228,10 +265,10 @@
 
 <div class=viewcode-block id=read_compressed_block><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.read_compressed_block>[docs]</a><span class=k>def</span> <span class=nf>read_compressed_block</span><span class=p>(</span><span class=n>f</span><span class=p>:</span> <span class=n>BinaryIO</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Generator</span><span class=p>[</span><span class=nb>bytes</span><span class=p>,</span> <span class=kc>None</span><span class=p>,</span> <span class=kc>None</span><span class=p>]:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Read compressed binary file, assuming the format is size + data + size + data + ...</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    f: fileObject</span>
+<span class=sd>    f : fileObject</span>
 <span class=sd>        The file object to read.</span>
 
 <span class=sd>    Yields</span>
@@ -243,18 +280,18 @@
         <span class=n>sizeb</span> <span class=o>=</span> <span class=n>f</span><span class=o>.</span><span class=n>read</span><span class=p>(</span><span class=mi>64</span><span class=p>)</span>
         <span class=k>if</span> <span class=ow>not</span> <span class=n>sizeb</span><span class=p>:</span>
             <span class=k>break</span>
-        <span class=n>size</span> <span class=o>=</span> <span class=nb>int</span><span class=o>.</span><span class=n>from_bytes</span><span class=p>(</span><span class=n>sizeb</span><span class=p>,</span> <span class=n>byteorder</span><span class=o>=</span><span class=s1>&#39;little&#39;</span><span class=p>)</span>
+        <span class=n>size</span> <span class=o>=</span> <span class=nb>int</span><span class=o>.</span><span class=n>from_bytes</span><span class=p>(</span><span class=n>sizeb</span><span class=p>,</span> <span class=n>byteorder</span><span class=o>=</span><span class=s2>&quot;little&quot;</span><span class=p>)</span>
         <span class=k>yield</span> <span class=n>sizeb</span> <span class=o>+</span> <span class=n>f</span><span class=o>.</span><span class=n>read</span><span class=p>(</span><span class=n>size</span><span class=p>)</span></div>
 
 
 <div class=viewcode-block id=bytestolist><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.bytestolist>[docs]</a><span class=k>def</span> <span class=nf>bytestolist</span><span class=p>(</span><span class=n>x</span><span class=p>:</span> <span class=nb>bytes</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Any</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Convert a compressed line to an object.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    x: bytes</span>
+<span class=sd>    x : bytes</span>
 <span class=sd>        The compressed line.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    object</span>
@@ -265,14 +302,16 @@
     <span class=k>return</span> <span class=n>pickle</span><span class=o>.</span><span class=n>loads</span><span class=p>(</span><span class=n>data</span><span class=p>)</span></div>
 
 
-<div class=viewcode-block id=listtostirng><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.listtostirng>[docs]</a><span class=k>def</span> <span class=nf>listtostirng</span><span class=p>(</span><span class=n>l</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=nb>list</span><span class=p>,</span> <span class=nb>tuple</span><span class=p>,</span> <span class=n>np</span><span class=o>.</span><span class=n>ndarray</span><span class=p>],</span> <span class=n>sep</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span> <span class=n>Tuple</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=o>...</span><span class=p>]])</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+<div class=viewcode-block id=listtostirng><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.listtostirng>[docs]</a><span class=k>def</span> <span class=nf>listtostirng</span><span class=p>(</span>
+    <span class=n>l</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=nb>list</span><span class=p>,</span> <span class=nb>tuple</span><span class=p>,</span> <span class=n>np</span><span class=o>.</span><span class=n>ndarray</span><span class=p>],</span> <span class=n>sep</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span> <span class=n>Tuple</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=o>...</span><span class=p>]]</span>
+<span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Convert a list to string, that is easier to store.</span>
 
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    l: str or array-like</span>
+<span class=sd>    l : str or array-like</span>
 <span class=sd>        The list to convert, which can contain any number of dimensions.</span>
-<span class=sd>    sep: list of strs</span>
+<span class=sd>    sep : list of strs</span>
 <span class=sd>        The seperators for each dimension.</span>
 
 <span class=sd>    Returns</span>
@@ -283,61 +322,63 @@
     <span class=k>if</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>l</span><span class=p>,</span> <span class=nb>str</span><span class=p>):</span>
         <span class=k>return</span> <span class=n>l</span>
     <span class=k>if</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>l</span><span class=p>,</span> <span class=p>(</span><span class=nb>list</span><span class=p>,</span> <span class=nb>tuple</span><span class=p>,</span> <span class=n>np</span><span class=o>.</span><span class=n>ndarray</span><span class=p>)):</span>
-        <span class=k>return</span> <span class=n>sep</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=k>lambda</span> <span class=n>x</span><span class=p>:</span> <span class=n>listtostirng</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>sep</span><span class=p>[</span><span class=mi>1</span><span class=p>:]),</span> <span class=n>l</span><span class=p>))</span>
+        <span class=k>return</span> <span class=n>sep</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>listtostirng</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>sep</span><span class=p>[</span><span class=mi>1</span><span class=p>:])</span> <span class=k>for</span> <span class=n>x</span> <span class=ow>in</span> <span class=n>l</span><span class=p>)</span>
     <span class=k>return</span> <span class=nb>str</span><span class=p>(</span><span class=n>l</span><span class=p>)</span></div>
 
 
-<div class=viewcode-block id=multiopen><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.multiopen>[docs]</a><span class=k>def</span> <span class=nf>multiopen</span><span class=p>(</span><span class=n>pool</span><span class=p>:</span> <span class=s2>&quot;multiprocessing.pool.Pool&quot;</span><span class=p>,</span>
-              <span class=n>func</span><span class=p>:</span> <span class=n>Callable</span><span class=p>,</span>
-              <span class=n>l</span><span class=p>:</span> <span class=n>IO</span><span class=p>,</span>
-              <span class=n>semaphore</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=s2>&quot;multiprocessing.synchronize.Semaphore&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-              <span class=n>nlines</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-              <span class=n>unordered</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
-              <span class=n>return_num</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
-              <span class=n>start</span><span class=p>:</span> <span class=nb>int</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>
-              <span class=n>extra</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>Any</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-              <span class=n>interval</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-              <span class=n>bar</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
-              <span class=n>desc</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-              <span class=n>unit</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&quot;it&quot;</span><span class=p>,</span>
-              <span class=n>total</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Iterable</span><span class=p>:</span>
-<span class=w>    </span><span class=sd>&quot;&quot;&quot;Returns an interated object for process a file with multiple processors.</span>
+<div class=viewcode-block id=multiopen><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.multiopen>[docs]</a><span class=k>def</span> <span class=nf>multiopen</span><span class=p>(</span>
+    <span class=n>pool</span><span class=p>:</span> <span class=s2>&quot;multiprocessing.pool.Pool&quot;</span><span class=p>,</span>
+    <span class=n>func</span><span class=p>:</span> <span class=n>Callable</span><span class=p>,</span>
+    <span class=n>l</span><span class=p>:</span> <span class=n>IO</span><span class=p>,</span>
+    <span class=n>semaphore</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=s2>&quot;multiprocessing.synchronize.Semaphore&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=n>nlines</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=n>unordered</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
+    <span class=n>return_num</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
+    <span class=n>start</span><span class=p>:</span> <span class=nb>int</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>
+    <span class=n>extra</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>Any</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=n>interval</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=n>bar</span><span class=p>:</span> <span class=nb>bool</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
+    <span class=n>desc</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=n>unit</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&quot;it&quot;</span><span class=p>,</span>
+    <span class=n>total</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>int</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Iterable</span><span class=p>:</span>
+<span class=w>    </span><span class=sd>&quot;&quot;&quot;Return an interated object for process a file with multiple processors.</span>
 
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    pool: multiprocessing.Pool</span>
+<span class=sd>    pool : multiprocessing.Pool</span>
 <span class=sd>        The pool for multiprocessing.</span>
-<span class=sd>    func: function</span>
+<span class=sd>    func : function</span>
 <span class=sd>        The function to process lines.</span>
-<span class=sd>    l: File object</span>
+<span class=sd>    l : File object</span>
 <span class=sd>        The file object.</span>
-<span class=sd>    semaphore: multiprocessing.Semaphore, optional, default: None</span>
+<span class=sd>    semaphore : multiprocessing.Semaphore, optional, default: None</span>
 <span class=sd>        The semaphore to acquire. If None (default), the object will be passed</span>
 <span class=sd>        without control.</span>
-<span class=sd>    nlines: int, optional, default: None</span>
+<span class=sd>    nlines : int, optional, default: None</span>
 <span class=sd>        The number of lines to pass to the function each time. If None (default),</span>
 <span class=sd>        only one line will be passed to the function.</span>
-<span class=sd>    unordered: bool, optional, default: True</span>
+<span class=sd>    unordered : bool, optional, default: True</span>
 <span class=sd>        Whether the process can be unordered.</span>
-<span class=sd>    return_num: bool, optional, default: False</span>
+<span class=sd>    return_num : bool, optional, default: False</span>
 <span class=sd>        If True, adds a counter to an iterable.</span>
-<span class=sd>    start: int, optional, default: 0</span>
+<span class=sd>    start : int, optional, default: 0</span>
 <span class=sd>        The start number of the counter.</span>
-<span class=sd>    extra: object, optional, default: None</span>
+<span class=sd>    extra : object, optional, default: None</span>
 <span class=sd>        The extra object passed to the item.</span>
-<span class=sd>    interval: int, optional, default: None</span>
+<span class=sd>    interval : int, optional, default: None</span>
 <span class=sd>        The interval of items that will be passed to the function. For example,</span>
 <span class=sd>        if set to 10, a item will be passed once every 10 items and others will</span>
 <span class=sd>        be dropped.</span>
-<span class=sd>    bar: bool, optional, default: True</span>
+<span class=sd>    bar : bool, optional, default: True</span>
 <span class=sd>        If True, show a tqdm bar for the iteration.</span>
-<span class=sd>    desc: str, optional, default: None</span>
+<span class=sd>    desc : str, optional, default: None</span>
 <span class=sd>        The description of the iteration shown in the bar.</span>
-<span class=sd>    unit: str, optional, default: it</span>
+<span class=sd>    unit : str, optional, default: it</span>
 <span class=sd>        The unit of the iteration shown in the bar.</span>
-<span class=sd>    total: int, optional, default: None</span>
+<span class=sd>    total : int, optional, default: None</span>
 <span class=sd>        The total number of the iteration shown in the bar.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    object</span>
@@ -363,6 +404,7 @@
 
 <div class=viewcode-block id=SCOUROPTIONS><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.SCOUROPTIONS>[docs]</a><span class=k>class</span> <span class=nc>SCOUROPTIONS</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Scour (SVG optimization) options.&quot;&quot;&quot;</span>
+
     <span class=n>strip_xml_prolog</span> <span class=o>=</span> <span class=kc>True</span>
     <span class=n>remove_titles</span> <span class=o>=</span> <span class=kc>True</span>
     <span class=n>remove_descriptions</span> <span class=o>=</span> <span class=kc>True</span>
@@ -390,11 +432,14 @@
 <span class=sd>    extraNoneKeys: list of strs, optional, default: None</span>
 <span class=sd>        Set keys to None, which will be used in the submodule.</span>
 <span class=sd>    &quot;&quot;&quot;</span>
-    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span>
-                <span class=n>rng</span><span class=p>:</span> <span class=s2>&quot;reacnetgenerator.ReacNetGenerator&quot;</span><span class=p>,</span>
-                <span class=n>usedRNGKeys</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-                <span class=n>returnedRNGKeys</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-                <span class=n>extraNoneKeys</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>]]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
+
+    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span>
+        <span class=bp>self</span><span class=p>,</span>
+        <span class=n>rng</span><span class=p>:</span> <span class=s2>&quot;reacnetgenerator.ReacNetGenerator&quot;</span><span class=p>,</span>
+        <span class=n>usedRNGKeys</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+        <span class=n>returnedRNGKeys</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+        <span class=n>extraNoneKeys</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>]]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+    <span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>rng</span> <span class=o>=</span> <span class=n>rng</span>
         <span class=bp>self</span><span class=o>.</span><span class=n>returnedRNGKeys</span> <span class=o>=</span> <span class=n>returnedRNGKeys</span>
         <span class=k>for</span> <span class=n>key</span> <span class=ow>in</span> <span class=n>usedRNGKeys</span><span class=p>:</span>
@@ -413,14 +458,14 @@
 
 <div class=viewcode-block id=checksha256><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.checksha256>[docs]</a><span class=k>def</span> <span class=nf>checksha256</span><span class=p>(</span><span class=n>filename</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>sha256_check</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>]]):</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Check sha256 of a file is correct.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    filename: str</span>
+<span class=sd>    filename : str</span>
 <span class=sd>        The filename.</span>
-<span class=sd>    sha256_check: str or list of strs</span>
+<span class=sd>    sha256_check : str or list of strs</span>
 <span class=sd>        The sha256 to be checked.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    bool</span>
@@ -429,9 +474,9 @@
     <span class=k>if</span> <span class=ow>not</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>isfile</span><span class=p>(</span><span class=n>filename</span><span class=p>):</span>
         <span class=k>return</span>
     <span class=n>h</span> <span class=o>=</span> <span class=n>hashlib</span><span class=o>.</span><span class=n>sha256</span><span class=p>()</span>
-    <span class=n>b</span> <span class=o>=</span> <span class=nb>bytearray</span><span class=p>(</span><span class=mi>128</span><span class=o>*</span><span class=mi>1024</span><span class=p>)</span>
+    <span class=n>b</span> <span class=o>=</span> <span class=nb>bytearray</span><span class=p>(</span><span class=mi>128</span> <span class=o>*</span> <span class=mi>1024</span><span class=p>)</span>
     <span class=n>mv</span> <span class=o>=</span> <span class=nb>memoryview</span><span class=p>(</span><span class=n>b</span><span class=p>)</span>
-    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>filename</span><span class=p>,</span> <span class=s1>&#39;rb&#39;</span><span class=p>,</span> <span class=n>buffering</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>filename</span><span class=p>,</span> <span class=s2>&quot;rb&quot;</span><span class=p>,</span> <span class=n>buffering</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
         <span class=k>for</span> <span class=n>n</span> <span class=ow>in</span> <span class=nb>iter</span><span class=p>(</span><span class=k>lambda</span><span class=p>:</span> <span class=n>f</span><span class=o>.</span><span class=n>readinto</span><span class=p>(</span><span class=n>mv</span><span class=p>),</span> <span class=mi>0</span><span class=p>):</span>
             <span class=n>h</span><span class=o>.</span><span class=n>update</span><span class=p>(</span><span class=n>mv</span><span class=p>[:</span><span class=n>n</span><span class=p>])</span>
     <span class=n>sha256</span> <span class=o>=</span> <span class=n>h</span><span class=o>.</span><span class=n>hexdigest</span><span class=p>()</span>
@@ -443,11 +488,11 @@
     <span class=k>return</span> <span class=kc>False</span></div>
 
 
-<div class=viewcode-block id=download_file><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.download_file>[docs]</a><span class=k>async</span> <span class=k>def</span> <span class=nf>download_file</span><span class=p>(</span><span class=n>urls</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>]],</span>
-                        <span class=n>pathfilename</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span>
-                        <span class=n>sha256</span><span class=p>:</span> <span class=nb>str</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+<div class=viewcode-block id=download_file><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.download_file>[docs]</a><span class=k>async</span> <span class=k>def</span> <span class=nf>download_file</span><span class=p>(</span>
+    <span class=n>urls</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=n>List</span><span class=p>[</span><span class=nb>str</span><span class=p>]],</span> <span class=n>pathfilename</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>sha256</span><span class=p>:</span> <span class=nb>str</span>
+<span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Download files from remote urls if not exists.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
 <span class=sd>    urls: str or list of strs</span>
@@ -456,23 +501,25 @@
 <span class=sd>        The downloading path of the file.</span>
 <span class=sd>    sha256: str</span>
 <span class=sd>        Sha256 of the file. If not None and match the file, the download will be skiped.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Returns</span>
 <span class=sd>    -------</span>
 <span class=sd>    pathfilename: str</span>
 <span class=sd>        The downloading path of the file.</span>
 <span class=sd>    &quot;&quot;&quot;</span>
     <span class=n>s</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>Session</span><span class=p>()</span>
-    <span class=n>s</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s1>&#39;http://&#39;</span><span class=p>,</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=mi>3</span><span class=p>))</span>
-    <span class=n>s</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s1>&#39;https://&#39;</span><span class=p>,</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=mi>3</span><span class=p>))</span>
+    <span class=n>s</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s2>&quot;http://&quot;</span><span class=p>,</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=mi>3</span><span class=p>))</span>
+    <span class=n>s</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s2>&quot;https://&quot;</span><span class=p>,</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=mi>3</span><span class=p>))</span>
     <span class=c1># download if not exists</span>
-    <span class=k>if</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>isfile</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>)</span> <span class=ow>and</span> <span class=p>(</span><span class=n>sha256</span> <span class=ow>is</span> <span class=kc>None</span> <span class=ow>or</span> <span class=n>checksha256</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>,</span> <span class=n>sha256</span><span class=p>)):</span>
+    <span class=k>if</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>isfile</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>)</span> <span class=ow>and</span> <span class=p>(</span>
+        <span class=n>sha256</span> <span class=ow>is</span> <span class=kc>None</span> <span class=ow>or</span> <span class=n>checksha256</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>,</span> <span class=n>sha256</span><span class=p>)</span>
+    <span class=p>):</span>
         <span class=k>return</span> <span class=n>pathfilename</span>
 
     <span class=c1># from https://stackoverflow.com/questions/16694907</span>
     <span class=k>for</span> <span class=n>url</span> <span class=ow>in</span> <span class=n>must_be_list</span><span class=p>(</span><span class=n>urls</span><span class=p>):</span>
         <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>&quot;Try to download </span><span class=si>{</span><span class=n>pathfilename</span><span class=si>}</span><span class=s2> from </span><span class=si>{</span><span class=n>url</span><span class=si>}</span><span class=s2>&quot;</span><span class=p>)</span>
-        <span class=k>with</span> <span class=n>s</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>stream</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span> <span class=k>as</span> <span class=n>r</span><span class=p>,</span> <span class=nb>open</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>,</span> <span class=s1>&#39;wb&#39;</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+        <span class=k>with</span> <span class=n>s</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>stream</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span> <span class=k>as</span> <span class=n>r</span><span class=p>,</span> <span class=nb>open</span><span class=p>(</span><span class=n>pathfilename</span><span class=p>,</span> <span class=s2>&quot;wb&quot;</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
             <span class=k>try</span><span class=p>:</span>
                 <span class=n>shutil</span><span class=o>.</span><span class=n>copyfileobj</span><span class=p>(</span><span class=n>r</span><span class=o>.</span><span class=n>raw</span><span class=p>,</span> <span class=n>f</span><span class=p>)</span>
                 <span class=k>break</span>
@@ -486,14 +533,19 @@
 
 <div class=viewcode-block id=gather_download_files><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.gather_download_files>[docs]</a><span class=k>async</span> <span class=k>def</span> <span class=nf>gather_download_files</span><span class=p>(</span><span class=n>urls</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>dict</span><span class=p>])</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Asynchronously download files from remote urls if not exists.</span>
-<span class=sd>    </span>
+
 <span class=sd>    See download_multifiles function for details.</span>
-<span class=sd>    </span>
+
 <span class=sd>    See Also</span>
 <span class=sd>    --------</span>
 <span class=sd>    download_multifiles</span>
 <span class=sd>    &quot;&quot;&quot;</span>
-    <span class=k>await</span> <span class=n>asyncio</span><span class=o>.</span><span class=n>gather</span><span class=p>(</span><span class=o>*</span><span class=p>[</span><span class=n>download_file</span><span class=p>(</span><span class=n>jdata</span><span class=p>[</span><span class=s2>&quot;url&quot;</span><span class=p>],</span> <span class=n>jdata</span><span class=p>[</span><span class=s2>&quot;fn&quot;</span><span class=p>],</span> <span class=n>jdata</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=s2>&quot;sha256&quot;</span><span class=p>,</span> <span class=kc>None</span><span class=p>))</span> <span class=k>for</span> <span class=n>jdata</span> <span class=ow>in</span> <span class=n>urls</span><span class=p>])</span></div>
+    <span class=k>await</span> <span class=n>asyncio</span><span class=o>.</span><span class=n>gather</span><span class=p>(</span>
+        <span class=o>*</span><span class=p>[</span>
+            <span class=n>download_file</span><span class=p>(</span><span class=n>jdata</span><span class=p>[</span><span class=s2>&quot;url&quot;</span><span class=p>],</span> <span class=n>jdata</span><span class=p>[</span><span class=s2>&quot;fn&quot;</span><span class=p>],</span> <span class=n>jdata</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=s2>&quot;sha256&quot;</span><span class=p>,</span> <span class=kc>None</span><span class=p>))</span>
+            <span class=k>for</span> <span class=n>jdata</span> <span class=ow>in</span> <span class=n>urls</span>
+        <span class=p>]</span>
+    <span class=p>)</span></div>
 
 
 <div class=viewcode-block id=download_multifiles><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.download_multifiles>[docs]</a><span class=k>def</span> <span class=nf>download_multifiles</span><span class=p>(</span><span class=n>urls</span><span class=p>:</span> <span class=n>List</span><span class=p>[</span><span class=nb>dict</span><span class=p>])</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
@@ -501,7 +553,7 @@
 
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    urls: list of dicts</span>
+<span class=sd>    urls : list of dicts</span>
 <span class=sd>        The information of download files. Each dict should contain the following key:</span>
 <span class=sd>            - url: str or list of strs</span>
 <span class=sd>                The url(s) that is available to download.</span>
@@ -513,12 +565,12 @@
     <span class=n>asyncio</span><span class=o>.</span><span class=n>run</span><span class=p>(</span><span class=n>gather_download_files</span><span class=p>(</span><span class=n>urls</span><span class=p>))</span></div>
 
 
-<div class=viewcode-block id=run_mp><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.run_mp>[docs]</a><span class=k>def</span> <span class=nf>run_mp</span><span class=p>(</span><span class=n>nproc</span><span class=p>:</span> <span class=nb>int</span><span class=p>,</span> <span class=o>**</span><span class=n>arg</span><span class=p>:</span> <span class=n>Any</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Iterable</span><span class=p>[</span><span class=n>Any</span><span class=p>]:</span>
+<div class=viewcode-block id=run_mp><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.run_mp>[docs]</a><span class=k>def</span> <span class=nf>run_mp</span><span class=p>(</span><span class=n>nproc</span><span class=p>:</span> <span class=nb>int</span><span class=p>,</span> <span class=o>**</span><span class=n>kwargs</span><span class=p>:</span> <span class=n>Any</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Iterable</span><span class=p>[</span><span class=n>Any</span><span class=p>]:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Process a file with multiple processors.</span>
 
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    nproc: int</span>
+<span class=sd>    nproc : int</span>
 <span class=sd>        The number of processors to be used.</span>
 <span class=sd>    **kwargs : dict, optional</span>
 <span class=sd>        Other parameters can be found in the `multiopen` method.</span>
@@ -533,9 +585,9 @@
 <span class=sd>    multiopen</span>
 <span class=sd>    &quot;&quot;&quot;</span>
     <span class=n>pool</span> <span class=o>=</span> <span class=n>Pool</span><span class=p>(</span><span class=n>nproc</span><span class=p>,</span> <span class=n>maxtasksperchild</span><span class=o>=</span><span class=mi>1000</span><span class=p>)</span>
-    <span class=n>semaphore</span> <span class=o>=</span> <span class=n>Semaphore</span><span class=p>(</span><span class=n>nproc</span><span class=o>*</span><span class=mi>150</span><span class=p>)</span>
+    <span class=n>semaphore</span> <span class=o>=</span> <span class=n>Semaphore</span><span class=p>(</span><span class=n>nproc</span> <span class=o>*</span> <span class=mi>150</span><span class=p>)</span>
     <span class=k>try</span><span class=p>:</span>
-        <span class=n>results</span> <span class=o>=</span> <span class=n>multiopen</span><span class=p>(</span><span class=n>pool</span><span class=o>=</span><span class=n>pool</span><span class=p>,</span> <span class=n>semaphore</span><span class=o>=</span><span class=n>semaphore</span><span class=p>,</span> <span class=o>**</span><span class=n>arg</span><span class=p>)</span>
+        <span class=n>results</span> <span class=o>=</span> <span class=n>multiopen</span><span class=p>(</span><span class=n>pool</span><span class=o>=</span><span class=n>pool</span><span class=p>,</span> <span class=n>semaphore</span><span class=o>=</span><span class=n>semaphore</span><span class=p>,</span> <span class=o>**</span><span class=n>kwargs</span><span class=p>)</span>
         <span class=k>for</span> <span class=n>item</span> <span class=ow>in</span> <span class=n>results</span><span class=p>:</span>
             <span class=k>yield</span> <span class=n>item</span>
             <span class=n>semaphore</span><span class=o>.</span><span class=n>release</span><span class=p>()</span>
@@ -551,10 +603,10 @@
 
 <div class=viewcode-block id=must_be_list><a class=viewcode-back href=../../api/reacnetgenerator.html#reacnetgenerator.utils.must_be_list>[docs]</a><span class=k>def</span> <span class=nf>must_be_list</span><span class=p>(</span><span class=n>obj</span><span class=p>:</span> <span class=n>Union</span><span class=p>[</span><span class=n>Any</span><span class=p>,</span> <span class=n>List</span><span class=p>[</span><span class=n>Any</span><span class=p>]])</span> <span class=o>-&gt;</span> <span class=n>List</span><span class=p>[</span><span class=n>Any</span><span class=p>]:</span>
 <span class=w>    </span><span class=sd>&quot;&quot;&quot;Convert a object to a list if the object is not a list.</span>
-<span class=sd>    </span>
+
 <span class=sd>    Parameters</span>
 <span class=sd>    ----------</span>
-<span class=sd>    obj: Object</span>
+<span class=sd>    obj : Object</span>
 <span class=sd>        The object to convert.</span>
 
 <span class=sd>    Returns</span>
@@ -566,4 +618,4 @@
     <span class=k>if</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>obj</span><span class=p>,</span> <span class=nb>list</span><span class=p>):</span>
         <span class=k>return</span> <span class=n>obj</span>
     <span class=k>return</span> <span class=p>[</span><span class=n>obj</span><span class=p>]</span></div>
-</pre></div> </article> <footer class=bd-footer-article> <!-- Previous / next buttons --> <div class=prev-next-area> </div> </footer> </div> <div class="bd-sidebar-secondary bd-toc"> <div class=toc-item> <div id=searchbox></div> </div> <div class=toc-item> </div> <div class=toc-item> </div> </div> </div> <footer class=bd-footer-content> <div class=bd-footer-content__inner> </div> </footer> </main> </div> </div> <!-- Scripts loaded after <body> so the DOM is not blocked --> <script src="../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script> <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script> <footer class=bd-footer><div class="bd-footer__inner container"> <div class=footer-item> <p class=copyright> &copy; Copyright 2019-2023, East China Normal University.<br> </p> </div> <div class=footer-item> <p class=theme-version> Built with the <a href=https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html> PyData Sphinx Theme </a> 0.12.0. </p> </div> <div class=footer-item> <p class=sphinx-version> Created using <a href=http://sphinx-doc.org/ >Sphinx</a> 5.3.0.<br> </p> </div> </div> </footer> </body> </html>
+</pre></div> </article> <footer class=bd-footer-article> <div class="footer-article-items footer-article__inner"> <div class=footer-article-item><!-- Previous / next buttons --> <div class=prev-next-area> </div></div> </div> </footer> </div> </div> <footer class=bd-footer-content> </footer> </main> </div> </div> <!-- Scripts loaded after <body> so the DOM is not blocked --> <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script> <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script> <footer class=bd-footer> <div class="bd-footer__inner bd-page-width"> <div class=footer-items__start> <div class=footer-item> <p class=copyright> © Copyright 2019-2023, East China Normal University. <br> </p> </div> <div class=footer-item> <p class=sphinx-version> Created using <a href=https://www.sphinx-doc.org/ >Sphinx</a> 5.3.0. <br> </p> </div> </div> <div class=footer-items__end> <div class=footer-item><p class=theme-version> Built with the <a href=https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html>PyData Sphinx Theme</a> 0.13.3. </p></div> </div> </div> </footer> </body> </html>
